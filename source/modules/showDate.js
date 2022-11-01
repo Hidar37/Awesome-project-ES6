@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+import { DateTime } from '../../node_modules/luxon/src/luxon.js';
 import { dateDisplay } from './values.js';
 
 export default class Time {
