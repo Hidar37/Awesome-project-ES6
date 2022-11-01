@@ -2,7 +2,7 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-trailing-spaces */
 
-import * as variables from '../modules/values';
+import * as variables from '../modules/values.js';
 
 variables.bookContainer;
 variables.form;
@@ -13,7 +13,8 @@ variables.addBookNav;
 variables.contactNav;
 variables.months;
 variables.dateDisplay;
-variables.bookList;
+
+let bookList = [];
 class AwesomeBook {
   constructor(title, author) {
     this.title = title;
@@ -66,7 +67,7 @@ class AwesomeBook {
 
 function showDate() {
   const dateObj = new Date();
-  const month = months[dateObj.getMonth()];
+  const month = variables.months[dateObj.getMonth()];
   const day = dateObj.getDay();
   const year = dateObj.getFullYear();
   const hour = dateObj.getHours();
@@ -84,13 +85,13 @@ function showDate() {
 const bookObj = new AwesomeBook(variables.bookTitle, variables.bookAuthor);
 
 if (localStorage.getItem('book') !== null) {
-  variables.bookList = JSON.parse(localStorage.getItem('book'));
+  bookList = JSON.parse(localStorage.getItem('book'));
   bookObj.addBook();
 }
 
 setInterval(showDate, 1000);
 // Add Button and create local storage
-form.addEventListener('submit', (e) => {
+variables.form.addEventListener('submit', (e) => {
   e.preventDefault();
   bookObj.displayBooks();
 });

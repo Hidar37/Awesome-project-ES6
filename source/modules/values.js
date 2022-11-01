@@ -11,5 +11,3 @@ export const addBookNav = document.getElementById('addbook');
 export const contactNav = document.getElementById('contact');
 export const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 export const dateDisplay = document.getElementById('date');
-
-let bookList = [];
