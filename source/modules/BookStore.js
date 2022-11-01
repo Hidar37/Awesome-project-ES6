@@ -1,6 +1,8 @@
-import { bookContainer } from './values.js';
-import { bookTitle } from './values.js';
-import { bookAuthor } from './values.js';
+/* eslint-disable linebreak-style */
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-trailing-spaces */
+
+import { bookContainer, bookTitle, bookAuthor } from './values.js';
 
 export default class AwesomeBook {
   constructor(title, author) {
@@ -10,7 +12,8 @@ export default class AwesomeBook {
   }
 
   setBookList() {
-    return this.bookList = JSON.parse(localStorage.getItem('book'));
+    this.bookList = JSON.parse(localStorage.getItem('book'));
+    return this.bookList;
   }
 
   // Remove Button
