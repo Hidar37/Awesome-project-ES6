@@ -2,6 +2,9 @@
 
 > This is a project that I and my coding partner have created using HTML,CSS and js. For now it have the functionality of storing the book: name and author and you can removed also the specific book. The data will be stored in user browser.
 
+# How to Run this Project
+> Please run this webpage using any live server. In order to use this project completely
+
 ## Built With
 
 - HTML
