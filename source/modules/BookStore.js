@@ -1,7 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable no-trailing-spaces */
-
 import { bookContainer, bookTitle, bookAuthor } from './values.js';
 
 export default class AwesomeBook {
@@ -11,13 +7,14 @@ export default class AwesomeBook {
     this.bookList = [];
   }
 
-  setBookList() {
+  setBookList = () => {
     this.bookList = JSON.parse(localStorage.getItem('book'));
     return this.bookList;
   }
 
   // Remove Button
-  removeBook(btnAdderss, bookArray, btnIndex, parentDiv) {
+  // eslint-disable-next-line class-methods-use-this
+  removeBook = (btnAdderss, bookArray, btnIndex, parentDiv) => {
     btnAdderss.addEventListener('click', () => {
       bookArray.splice(btnIndex, 1);
       localStorage.setItem('book', JSON.stringify(bookArray));
@@ -27,7 +24,7 @@ export default class AwesomeBook {
   }
 
   // Adding Books
-  addBook() {
+  addBook = () => {
     const bookData = JSON.parse(localStorage.getItem('book'));
     bookData.forEach((item, index) => {
       const bookDiv = document.createElement('div');
@@ -46,7 +43,7 @@ export default class AwesomeBook {
   }
 
   // Displaying Books
-  displayBooks() {
+  displayBooks = () => {
     const book = {
       title: this.title.value,
       author: this.author.value,

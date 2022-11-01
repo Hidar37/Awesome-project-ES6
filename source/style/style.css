@@ -1,5 +1,4 @@
 /* stylelint-disable no-descending-specificity */
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
 
 /* Fonts */
 @font-face {
@@ -18,7 +17,7 @@
 }
 
 body {
-  font-family: 'md';
+  font-family: 'md', serif;
 }
 
 * {
@@ -176,14 +175,14 @@ input[type='text'] {
 
 #contact-section p {
   font-size: 1.2rem;
-  font-family: 'sm';
+  font-family: 'sm', serif;
   margin-bottom: 1.5rem;
 }
 
 #contact-section p #break-line {
   display: block;
   font-size: 1.2rem;
-  font-family: 'sm';
+  font-family: 'sm', serif;
   margin-bottom: 1.5rem;
   margin-left: 0.5rem;
 }

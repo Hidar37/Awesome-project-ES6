@@ -1,7 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable no-trailing-spaces */
-
 export const bookContainer = document.getElementById('book-store');
 export const form = document.getElementById('adding-book-form');
 export const bookTitle = document.getElementById('title');
