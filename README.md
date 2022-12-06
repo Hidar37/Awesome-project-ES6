@@ -63,6 +63,7 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+- Please run the project using any live server or any live server extension.
 - Node.js
 - Browser (any)
 - Working PC
