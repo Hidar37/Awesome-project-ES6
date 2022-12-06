@@ -7,7 +7,7 @@ export default class Time {
   }
 
   showTime = () => {
-    // Show Date Time
+    // Show Date Time Here
     dateDisplay.innerText = this.now.toLocaleString(DateTime.DATETIME_MED);
   }
 }
